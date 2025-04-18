@@ -16,7 +16,7 @@ public class MyHooks {
 
     @Before
     public void setup() throws IOException {
-        System.out.println("WebDriver session has started!!!");
+        System.out.println("WebDriver session has started!!!+22");
         Properties prop = ConfigReader.intiliaseProperties();
         DriverFactory.initializeBrowser(prop.getProperty("browser"));
         driver = DriverFactory.getDriver();
