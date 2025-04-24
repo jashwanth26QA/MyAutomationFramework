@@ -1,0 +1,13 @@
+{
+"RegistrationForm": {
+  "Password":"Welcome@123",
+  "LastName": "kumar",
+  "Company": "Samsung",
+  "Address": "12-13-490,St 1,Lane 5,Madhapur",
+  "Address2": "Ascendas IT park Hitech City",
+  "State":"Telangana",
+  "City": "Hyderabad",
+  "ZipCode": "500034",
+  "MobileNumber": "9890989023"
+  }
+}

@@ -52,12 +52,12 @@ public class LoginPage  {
 
     public void userClicksOnloginButton() throws InterruptedException {
         loginBtn.click();
+        commUtil.waitForVisibilityOfElement(imageIcon);
         commUtil.localWait(2800);
     }
 
     public void userClicksOnSignupBtn(){
         SignUpBtn.click();
-        commUtil.waitForVisibilityOfElement(imageIcon);
         commUtil.localWait(800);
     }
 }
