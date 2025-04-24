@@ -6,6 +6,8 @@ import io.cucumber.plugin.event.Node;
 import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
 
+import java.util.HashMap;
+
 public class LoginPageSteps  {
     WebDriver driver;
     LoginPage lp;
@@ -14,6 +16,7 @@ public class LoginPageSteps  {
     public void userLaunchApplication() {
         try {
             driver=DriverFactory.getDriver();//driver
+            lp=new LoginPage(driver);
         } catch (Exception ae) {
             System.out.println(ae);
         }
@@ -21,7 +24,6 @@ public class LoginPageSteps  {
 
     @When("^user enters \"([^\"]*)\" and \"([^\"]*)\" with the valid credentials$")
     public void user_enters_with_the_valid_credentials(String username, String password) {
-        lp=new LoginPage(driver);
         lp.userEntersCredentials(username,password);
     }
 
@@ -39,4 +41,6 @@ public class LoginPageSteps  {
     public void clicksOnSignUpButton() {
         lp.userClicksOnSignupBtn();
     }
+
+
 }
